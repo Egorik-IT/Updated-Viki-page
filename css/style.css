@@ -77,6 +77,7 @@ body{
 .email, .name, .telefone, .age, .hobby{
     font-weight: 700;
     font-size: 20px;
+    text-transform: uppercase;
 }
 
 @keyframes timer__opasity{
