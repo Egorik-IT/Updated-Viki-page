@@ -1,0 +1,168 @@
+body{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'El Messiri';
+    background: url(../img/Background__body.jpg) no-repeat left top;
+    background-size: 1920px 1080px;
+    overflow-x: hidden;
+}
+.mega__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container__block_1, .container__block_2{
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+}
+.logo__container {
+    margin: 40px 0px 0px 40px;
+    padding: 10px;
+    max-width: max-content;
+    border-radius: 100%;
+}
+.title__logo{
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-align: center;
+    color: white;
+    animation: 1.4s forwards timer__opasity;
+}
+.logo__image {
+    max-width: 400px;
+    border-radius: 100%;
+    box-shadow: rgb(226, 252, 255) -20px 10px 50px 20px;
+    margin: 22px 0px 0px 0px;
+    animation: 1.4s forwards timer__opasity;
+}
+
+.container__block_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description__of__person__container{
+    background: white;
+    border: #3d3d3d 2px solid;
+    border-radius: 40px;
+    padding: 20px 54px;
+    margin: 0px 20px;
+    max-width: max-content;
+    animation: 2s forwards timer__opasity__description;
+}
+.title__description__of__person {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0px 0px 0px;
+    color: #3d3d3d;
+}
+.nav__description__of__person {
+    margin: 30px 0px;
+}
+.nav__item {
+    color: #3d3d3d;
+    margin: 60px 0px;
+    font-size: 24px;
+}
+.nav__item a{
+    color: #3d3d3d;
+}
+.nav__item:first-child, .nav__item:last-child {
+    margin: 0px;
+}
+.email, .name, .telefone, .age, .hobby{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+@keyframes timer__opasity{
+    0%{
+        opacity: 0;
+        margin-top: -10px;
+    }
+    100%{
+        opacity:1;
+    }
+}
+@keyframes timer__opasity__description{
+    0%{
+        opacity: 0;
+        margin-right: -2000px;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+@media (max-width:1200px) {
+    .logo__image{
+        max-width: 300px;
+    }
+    .title__logo{
+        font-size: 28px;
+    }
+    .container__block_2{
+        align-items: flex-end;
+    }
+    .nav__item {
+        margin: 40px 0px;
+        font-size: 20px;
+    }
+    .email, .name, .telefone, .age, .hobby{
+        font-weight: 700;
+        font-size: 18px;
+    }
+}
+@media (max-width:880px) {
+    body{
+        overflow: scroll;
+        max-height: 100%;
+    }
+    .logo__image{
+        max-width: 400px;
+    }
+    .logo__container {
+        margin: 0px 0px 0px 0px;
+    }
+    .mega__container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container__block_1, .container__block_2{
+        height: 50vh;
+    }
+    .container__block_2{
+        align-items: center;
+    }
+    .logo__container {
+        text-align: center;
+        max-width: 100%;
+    }
+}
+@media (max-width:570px) {
+    .title__logo{
+        font-size: 24px;
+    }
+    .logo__image{
+        max-width: 250px;
+    }
+    .nav__item {
+        margin: 30px 0px 30px 10px;
+        font-size: 18px;
+    }
+    .email, .name, .telefone, .age, .hobby{
+        font-size: 16px;
+    }
+    .description__of__person__container{
+        padding: 20px 24px;
+    }
+    .title__description__of__person {
+        font-size: 24px;
+    }
+    .nav__item:first-child, .nav__item:last-child {
+        margin: 0px 0px 0px 10px;
+    }
+}
