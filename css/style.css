@@ -98,12 +98,6 @@ body{
 }
 
 @media (max-width:1200px) {
-    .logo__image{
-        max-width: 300px;
-    }
-    .title__logo{
-        font-size: 28px;
-    }
     .container__block_2{
         align-items: flex-end;
     }
