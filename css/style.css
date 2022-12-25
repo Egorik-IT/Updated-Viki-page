@@ -3,7 +3,7 @@ body{
     font-weight: 500;
     font-family: 'El Messiri';
     background: url(../img/Background__body.jpg) no-repeat left top;
-    background-size: 1920px 1080px;
+    background-size: 1920px 100vh;
     overflow-x: hidden;
 }
 .mega__container{
@@ -126,7 +126,10 @@ body{
         justify-content: center;
     }
     .container__block_1, .container__block_2{
-        height: 50vh;
+        height: auto;
+    }
+    .container__block_2{
+        margin: 120px 0px 0px 0px;
     }
     .container__block_2{
         align-items: center;
