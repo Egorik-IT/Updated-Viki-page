@@ -3,7 +3,7 @@ body{
     font-weight: 500;
     font-family: 'El Messiri';
     background: url(../img/Background__body.jpg) no-repeat left top;
-    background-size: 1920px 100vh;
+    background-size: 1920px 1080px;
     overflow-x: hidden;
 }
 .mega__container{
@@ -97,7 +97,7 @@ body{
     }
 }
 
-@media (max-width:1200px) {
+@media (max-width:1260px) {
     .container__block_2{
         align-items: flex-end;
     }
@@ -110,10 +110,10 @@ body{
         font-size: 18px;
     }
 }
-@media (max-width:880px) {
+@media (max-width: 1000px) {
     body{
         overflow: scroll;
-        max-height: 100%;
+        background-size: 1920px 100vh;
     }
     .logo__image{
         max-width: 400px;
